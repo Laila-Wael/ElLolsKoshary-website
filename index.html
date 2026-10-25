@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>El Lols Koshary</title>
+<meta name="theme-color" content="#4A1119">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="El Lols">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/svg+xml" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Mulish:wght@400;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800;900&family=Mulish:wght@400;600;700&display=swap"></noscript>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><img class="logo" src="images/logo.svg" alt="El Lols logo"><span>El Lols</span></div>
+    <button class="cart-btn" id="cartBtn">🛒 Cart <span class="count" id="cartCount">0</span></button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid"><div>
+    <div class="eyebrow">Since 2006 · 100% Halal</div>
+    <h1>Koshary el Lols</h1>
+    <p>Every single dish made fresh with locally sourced ingredients — a little lols magic in every bowl. Order online, pick a branch, and we'll get it to you hot.</p>
+    <div class="badges">
+      <div class="badge">🕑 Open 12PM – 2AM</div>
+      <div class="badge">🌱 100% Halal</div>
+      <div class="badge">🔥 20 years of koshary</div>
+    </div>
+  </div>
+  <img class="hero-logo" src="images/logo.svg" alt="El Lols logo">
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="special">🎉 Try our new Extra Large Koshary — warning: contains extra yummieness.</div>
+</div>
+
+<section class="menu">
+  <div class="wrap">
+    <h2>Order online</h2>
+    <p class="subhead">Add whatever you're craving, then check out below.</p>
+
+    <div class="cat">Koshary</div>
+    <div class="grid" id="cat-koshary"></div>
+
+    <div class="cat">Tiger Combos</div>
+    <div class="grid" id="cat-combo"></div>
+
+    <div class="cat">Extras & Toppings</div>
+    <div class="grid" id="cat-extras"></div>
+
+    <div class="cat">Drinks & Dessert</div>
+    <div class="grid" id="cat-drinks"></div>
+  </div>
+</section>
+
+<section class="branches">
+  <div class="wrap">
+    <h2>Pick your branch</h2>
+    <p class="subhead">Tap a branch to see estimated delivery time.</p>
+    <div class="branch-list" id="branchList"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>@ellols_kingkoshary on every platform</div>
+    <div style="margin-top:6px;">© 2006 El Lols Restaurant™. All rights reserved.</div>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<div class="drawer" id="drawer">
+  <button class="close" id="closeDrawer">✕</button>
+  <h2>Your order</h2>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-total"><span>Total</span><span id="cartTotal">0 EGP</span></div>
+  <button class="checkout-btn" id="checkoutBtn" disabled>Checkout</button>
+</div>
+
+<div class="modal-overlay" id="checkoutOverlay">
+  <div class="modal" id="checkoutModal">
+    <!-- filled by JS -->
+  </div>
+</div>
+
+<div class="install" id="installBar" hidden><span id="installTxt">Install the El Lols app</span><button id="installBtn">Install</button><button id="installX" aria-label="Close">✕</button></div>
+<script src="script.js"></script>
+</body>
+</html>
